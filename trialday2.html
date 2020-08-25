@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Discuss</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="discuss part of apnastudy website by Shubham Tyagi and Shubhangi Nikalje interning in RYD Company">
+    <meta name="author" content="shubham Tyagi and Shubhangi Nikalje interning Team">
+    <!--link rel="stylesheet" type="text/css" href="index.css">-->
+</head>
+<style>
+  body{
+  width: 100%;
+  
+}
+.clrFix{
+  clear: both;
+}
+
+.AllQuestion{
+  padding: 10px;
+  margin: 10px;
+}
+
+.left-nav-bar{
+  width: 15%;
+  float: left;
+}
+#main-section{
+  
+  width: 65%;
+  float: left;  
+  margin: 10px;
+  padding: 10px;
+}
+.right-nav-bar{
+  width: 15%;
+  float: left;
+}
+.search-bar{
+  background-color: white;
+  float: right;
+  margin-bottom: 10px;
+}
+#main-section1{
+  background-color: #e1e7f0;
+}
+.AllQuestionLabel{
+  font-size: 20px;
+  font-weight: bold;
+}
+.AskQuestionBtn{
+  float: right;
+  background-color: skyblue;
+  padding: 10px;
+  color: white;
+  border: none;
+}
+body
+{
+  background-color: beige;
+}
+.box
+{
+  background-color: white;
+  width: 55%;
+  height: 320px;
+  padding: 50px;
+  margin: 20px;
+  float: left;
+  border-radius: 20px;
+}
+.ques
+{
+  color: green;
+  font-size: 25px;
+  padding-left: 25%;
+  align-content: left;
+
+}
+.ans
+{
+  padding-top:25px ;
+  color: black;
+  font-size: 20px;
+  padding-left: 25%;
+}
+.button 
+{
+  padding-left: 220px;
+  padding-top: 20px;
+  margin: 20px;
+  font-size: 28px;
+  color: #4CAF50;
+}
+.question
+{
+  float: right;
+  height: auto;
+  width: 30auto;
+  align-content: center;
+  padding-top:10px ;
+  color: black;
+  font-size: 20px;
+  padding-left: 10px;
+  background-color:#F7BDB1;
+  border-radius: 20px;
+  margin: 30px;
+  
+}
+.answer
+{
+  float: right;
+  height: auto;
+  width: 30%;
+  align-content: center;
+  padding-top:10px ;
+  color: black;
+  font-size: 20px;
+  padding-left: 10px;
+  border-radius: 20px;
+  margin: 20px;
+  background-color:rgb(133, 241, 133);
+  
+
+}
+h1
+{
+    color: black;
+    padding-bottom: 10px;
+    align-content: center;
+    padding-left: 40px;
+}
+.header
+{
+    padding-bottom: 350px;
+    margin: 20px;
+}
+p
+{
+    margin: 40px;
+    padding-right: 20px;
+}
+
+
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.button {
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+.AskQuestionBtn {
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }      
+
+</style>
+<body>
+    <div class="header">
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td,
+            th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+
+         .dropbtn {
+  background-color: #1c87c9;
+  color: white;
+  
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+        </style>
+
+        <body>
+
+            <div class="left-nav-bar">
+                <ul>
+                    <li>abcd</li>
+                    <li>abcd</li>
+                    <li>abcd</li>
+                </ul>
+            </div>
+            <div id="main-section">
+                <div class="search-bar">
+                    <input type="text" name="searchText" id="searchText">
+                    <button>Q</button>
+                </div>
+                <div class="clrFix"></div>
+                <div id="main-section1">
+                    <div class="AllQuestion">
+                        <div>
+                            <LABEL class="AllQuestionLabel">All Questions</LABEL>
+
+                            <LABEL class="AllQuestionLabel"></br></br>120, 120, 120 </br> Questions</br></LABEL>
+
+                            </br><button class="AskQuestionBtn">Ask Question</button></br>
+
+                            <nav>
+                                <th>
+                               <tr></tr> <a href="#" class="button">Newest</a> </tr>
+                                <!--<a href="https://www.w3docs.com/" class="button">Click Here</a>-->
+                                <tr><a href="#" class="button">Active</a> </tr>
+                            
+                                <a href="#" class="button">Bountied</a> 
+                                <a href="#" class="button">Unanswered</a> </br>
+                            </th>
+                            </nav>
+
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">More..</button>
+  <div class="dropdown-content">
+  <a href="#">Frequent</a>
+  <a href="#">Votes</a>
+  
+  </div>
+</div> 
+
+
+
+<!---
+<div class="btn-group">
+  <button>Newest</button>
+  <button>Active</button>
+  <button>Bountied</button>
+  <button>Unanswered</button>
+</div>
+-->
+<!--
+</br> <button>More
+    <select>
+        <option value="1">Menu</option>
+    <option value="2">Frequent</option>
+    <option value="3">Votes</option>
+    </select>
+</button>
+-->
+
+
+                            <!-- <p> ************** This is where u can work **********</p> -->
+
+
+
+
+                        </div>
+
+
+
+
+                        <div>
+
+                            <!-- <p> ************** This is where u can work
+                                and here in this div also
+                         **********</p> -->
+
+                            <p>
+                              
+                                .
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="right-nav-bar">
+                <ul>
+                    <li>abcd</li>
+                    <li>abcd</li>
+                    <li>abcd</li>
+                </ul>
+            </div>
+
+        
+
+    <div class="box">
+        <div class="vote">
+            <span class="material-icons muiicon-root" aria-hidden="true" style="font-size: 30px">arrow_drop_up</span>
+            <h1>7</h1>
+            <p>answers</p>
+            <p>
+                "200"
+                "Views"
+            </p>
+            <span class="material-icons muiicon-root" aria-hidden="true" style="font-size: 30px">arrow_drop_up</span>
+        </div>
+
+        <div class="ques">
+            <b> How to show info about page number between"previous"and "next" buttons in Data Tables?</b><br>
+        </div>
+        <div class="ans">
+            i need to show text about the current page number and total apge count between 'previous/next' buttons
+            in the Data Table this is how should it look like:,....
+        </div>
+        <div class="button">
+            <button type="button">sql</button>
+            <button type="button">mysql</button>
+            <button type="button">django</button>
+            <button type="button">react</button>
+            <button type="button">mongo</button>
+            <button type="button">mongoose</button>
+        </div>
+       
+    </div>
+    <div class="question">
+        <h1>Trending Question</h1>
+        <p>Lorem ipsum is simply dummy text?</p>
+        <p>Lorem ipsum is simply dummy text?</p>
+        <p>Lorem ipsum is simply dummy text?</p>
+        <p>Lorem ipsum is simply dummy text?</p>
+    </div>
+    <div>
+        <div class="box">
+
+            <div class="ques">
+                <b> How to show info about page number between"previous"and "next" buttons in Data Tables?</b><br>
+            </div>
+            <div class="ans">
+                i need to show text about the current page number and total apge count between 'previous/next' buttons
+                in the Data Table this is how should it look like:,....
+            </div>
+            <div class="button">
+                <button type="button">sql</button>
+                <button type="button">mysql</button>
+                <button type="button">django</button>
+                <button type="button">react</button>
+                <button type="button">mongo</button>
+                <button type="button">mongoose</button>
+            </div>
+        </div>
+    
+        <div class="answer">
+            <h1>Most Answered</h1>
+            <p>Lorem ipsum is simply dummy text?</p>
+            <p>Lorem ipsum is simply dummy text?</p>
+            <p>Lorem ipsum is simply dummy text?</p>
+            <p>Lorem ipsum is simply dummy text?</p>
+        </div>
+    </div>
+
+</body>
